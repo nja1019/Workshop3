@@ -41,12 +41,13 @@
 			     <a class="navbar-brand" href="#">
 			       <!-- This is how you display a glyphicon. -->
 			       <span class="glyphicon glyphicon-home"></span>
-			     </a></div>
+			     </a>
+			</div>
 
 			   <!-- On mobile, this div is hidden by default. The user hits the button
 			        in the `navbar-header` to see the content of the div.
 			        On desktop, this div is visible all of the time. -->
-			   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<form class="navbar-form navbar-left" role="search">
 				      <!-- Left-aligned items. -->
 				      <div class="input-group">
@@ -67,13 +68,13 @@
 						</div>
 
 						<div class="btn-group" role="group">
-							<button type="button" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-user"></span>
+							<button type="button" class="btn btn-default navbar-btn fb-notifications"><span class="glyphicon glyphicon-user"></span>
 					               <span class="badge">5</span></button>
 
-							<button type="button" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-comment"></span>
+							<button type="button" class="btn btn-default navbar-btn fb-notifications"><span class="glyphicon glyphicon-comment"></span>
 					               <span class="badge">1</span></button>
 
-							<button type="button" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-globe"></span>
+							<button type="button" class="btn btn-default navbar-btn fb-notifications"><span class="glyphicon glyphicon-globe"></span>
 					               <span class="badge">3</span></button>
 						</div>
 
@@ -104,7 +105,7 @@
 	      <div class="row">
 	        <!-- Left sidebar: A cell that spans 2 columns -->
 	        <!-- Left sidebar: A cell that spans 2 columns -->
-	      <div class="col-md-2">
+	      <div class="col-md-2 fb-left-sidebar ">
 				<ul class="nav nav-pills nav-stacked">
 					<li role="presentation"><a href="#">John Vilk</a></li>
 					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-pencil"></span>
@@ -118,7 +119,7 @@
 			          <!-- We can use badges in pills to add numbers beside them. -->
 			          <li role="presentation"><a href="#">
 			              <span class="glyphicon glyphicon-comment"></span> Messages
-			              <span class="badge">7</span>
+			              <span class="badge pull-right">7</span>
 			            </a></li>
 					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-calendar"></span>
 			            Events</a></li>
@@ -130,7 +131,7 @@
 			          <li role="presentation"><a href="#">
 			              <span class="glyphicon glyphicon-bookmark"></span>
 			              Saved
-			              <span class="badge">2</span>
+			              <span class="badge pull-right">2</span>
 			            </a></li>
 					<li role="presentation"><a href="#"><span class="glyphicon glyphicon-tags"></span>
 			            Sale Groups</a></li>
@@ -150,7 +151,7 @@
 				</ul>
 			</div>
 	        <!-- Main feed: A cell that spans 7 columns -->
-	        <div class="col-md-7">
+	    <div class="col-md-7">
 						<!-- Status update entry -->
 						<div class="panel panel-default fb-status-update-entry">
 						  <div class="panel-body">
@@ -314,78 +315,79 @@
 					</div>
 	        <!-- Right sidebar: A cell that spans 3 columns -->
 	        <!-- Right sidebar: A cell that spans 3 columns -->
-	        <div class="col-md-3">
+	        <div class="col-md-3 fb-right-sidebar">
 	          <!-- Nested grid! Like the outer grid, it's just a sequence of rows. -->
 	          <!-- Ticker -->
 	          <div class="row">
-				<div class="col-md-12"><a href="#" class="pull-right">
+							<div class="col-md-12"><a href="#" class="pull-right">
 		            <span class="glyphicon glyphicon-download-alt"></span>
-		            </a></div>
-				</div>
-		          <!-- Birthday -->
-		        <div class="row">
-					<div class="col-md-12"><span class="glyphicon glyphicon-gift"></span>
-			              <a href="#">Zak</a> and <a href="#">1 other</a></div>
-				</div>
-		          <!-- Trending -->
-		          <div class="row">
-					<div class="col-md-12 fb-trending">
-						<div class="row">
-							<div class="col-md-4 fb-trending-title">TRENDING</div>
-
-							<div class="col-md-8">
-								<ul class="nav nav-pills pull-right">
-									<li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-flash"></span></a></li>
-									<li role="presentation"><a href="#">
-				                        <span class="glyphicon glyphicon-tower"></span>
-				                        </a></li>
-									<li role="presentation"><a href="#">
-				                        <span class="glyphicon glyphicon-sunglasses"></span>
-				                        </a></li>
-									<li role="presentation"><a href="#">
-				                        <span class="glyphicon glyphicon-record"></span>
-				                        </a></li>
-									<li role="presentation"><a href="#">
-				                        <span class="glyphicon glyphicon-facetime-video"></span>
-				                        </a></li>
-								</ul>
+		          </a>
 							</div>
 						</div>
+		          <!-- Birthday -->
+		        <div class="row">
+							<div class="col-md-12"><span class="glyphicon glyphicon-gift"></span>
+			           <a href="#">Zak</a> and <a href="#">1 other</a></div>
+						</div>
+		          <!-- Trending -->
+		        <div class="row">
+							<div class="col-md-12 fb-trending">
+								<div class="row">
+									<div class="col-md-4 fb-trending-title">TRENDING</div>
 
-						<div class="row">
-							<div class="col-md-12">
-								<ul class="media-list">
-									<li class="media">
-										<div class="media-left media-top"><span class="glyphicon glyphicon-flash"></span></div>
-
-										<div class="media-body"><a href="#">George Lucas</a>: Filmmaker Criticizes New
-				                            "Star Wars" Film and Direction of Franchise Under
-				                            Disney</div>
-									</li>
-									<li class="media">
-										<div class="media-left media-top"><span class="glyphicon glyphicon-flash"></span></div>
-
-										<div class="media-body"><a href="#">Super Smash Bros.</a>: Game Glitch Allows
-				                            Players to Control 8 Characters With 1 Controller</div>
-									</li>
-									<li class="media">
-										<div class="media-left media-top"><span class="glyphicon glyphicon-flash"></span></div>
-
-										<div class="media-body"><a href="#">Tuukka Rask</a>: Boston Bruins Player
-				                            Debuts Goalie Mask for Winter Classic</div>
-									</li>
-									<li class="media">
-										<div class="media-left media-top"><span class="caret"></span></div>
-
-										<div class="media-body"><a href="#">See More</a></div>
-									</li>
-								</ul>
+									<div class="col-md-8">
+										<ul class="nav nav-pills pull-right">
+											<li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-flash"></span></a></li>
+											<li role="presentation"><a href="#">
+						                        <span class="glyphicon glyphicon-tower"></span>
+						                        </a></li>
+											<li role="presentation"><a href="#">
+						                        <span class="glyphicon glyphicon-sunglasses"></span>
+						                        </a></li>
+											<li role="presentation"><a href="#">
+						                        <span class="glyphicon glyphicon-record"></span>
+						                        </a></li>
+											<li role="presentation"><a href="#">
+						                        <span class="glyphicon glyphicon-facetime-video"></span>
+						                        </a></li>
+										</ul>
+									</div>
 							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="media-list">
+										<li class="media">
+											<div class="media-left media-top"><span class="glyphicon glyphicon-flash"></span></div>
+
+											<div class="media-body"><a href="#">George Lucas</a>: Filmmaker Criticizes New
+					                            "Star Wars" Film and Direction of Franchise Under
+					                            Disney</div>
+										</li>
+										<li class="media">
+											<div class="media-left media-top"><span class="glyphicon glyphicon-flash"></span></div>
+
+											<div class="media-body"><a href="#">Super Smash Bros.</a>: Game Glitch Allows
+					                            Players to Control 8 Characters With 1 Controller</div>
+										</li>
+										<li class="media">
+											<div class="media-left media-top"><span class="glyphicon glyphicon-flash"></span></div>
+
+											<div class="media-body"><a href="#">Tuukka Rask</a>: Boston Bruins Player
+					                            Debuts Goalie Mask for Winter Classic</div>
+										</li>
+										<li class="media">
+											<div class="media-left media-top"><span class="caret"></span></div>
+
+											<div class="media-body"><a href="#">See More</a></div>
+										</li>
+									</ul>
+								</div>
 						</div>
 					</div>
 				</div>
-		          <!-- Suggested pages -->
-		          <div class="row">
+		   <!-- Suggested pages -->
+		    <div class="row">
 					<div class="col-md-12">
 						<div class="row">
 							<div class="col-md-8">SUGGESTED PAGES</div>
